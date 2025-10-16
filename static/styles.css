@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #d7f8ff, #f3eaff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 2rem;
+  color: #0078d7;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.upload-form input[type="file"] {
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px dashed #0078d7;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+button, .btn {
+  background: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: #005ea2;
+}
+
+.result-card {
+  padding: 20px;
+}
+
+.xray-img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.danger-text { color: #e63946; }
+.success-text { color: #2a9d8f; }
+
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #f7faff;
+  padding: 15px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.diet-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.diet-list li {
+  background: #e7f9f5;
+  margin: 8px auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.progress-table th, .progress-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 15px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.progress-fill {
+  height: 15px;
+  background: linear-gradient(90deg, #00c6ff, #0078d7);
+  border-radius: 10px;
+  animation: grow 3s ease-in-out forwards;
+}
+
+@keyframes grow {
+  from { width: 0%; }
+  to { width: 100%; }
+}
